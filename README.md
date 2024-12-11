@@ -2,8 +2,6 @@
 
 # CSIT TEAM 004
 
-### **Team Name:** Shadow Watts
-
 # Team Composition
 
 | Name | Branch | Roll Number | Contact Information | GitHub Profile |
