@@ -92,35 +92,53 @@ Pixello will feature an intuitive user interface, robust back-end architecture, 
   - Story views.
   - Direct messages.
 
+### 2.1.10 **Smart Content Recommendations**
+
+- **Requirement:** The system shall analyze user interactions, content preferences, and activity history to recommend personalized posts, reels, or stories.
+- **Feature:** The system shall display a "Today's Mood" section with curated content based on inferred user emotions and trends.
+
+### 2.1.11 **Anti-Screenshot Protection**
+
+- **Requirement:** The system shall detect and log screenshot attempts on private posts, stories, and DMs.
+- **Feature:** The system shall notify the content owner of any screenshot or screen recording event.
+
+### 2.1.12 **Interactive Product Tags**
+
+- **Requirement:** The system shall allow users to tag products in their posts with affiliate links.
+- **Feature:** The system shall provide analytics for users on product interactions (e.g., clicks, purchases).
+
 ---
 
 ### 2.2 Non-Functional Requirements
 
-#### 2.2.1 **Security**
+### 2.2.1 Security
 
-- Use secure protocols (HTTPS) and data encryption (AES-256).
-- Implement OAuth 2.0 for authentication.
-- Protect against SQL injection, XSS, and other vulnerabilities.
+- **Requirement:** Use secure protocols (HTTPS) and data encryption (AES-256).
+- **Feature:** Implement OAuth 2.0 for authentication.
+- **Feature:** Protect against SQL injection, XSS, and other vulnerabilities.
 
-#### 2.2.2 **Performance**
+### 2.2.2 Performance
 
-- Ensure sub-second response times for most interactions.
-- Handle up to 10,000 concurrent users during peak traffic.
+- **Requirement:** Ensure sub-second response times for most interactions.
+- **Feature:** AI algorithms shall process recommendations in under 1 second.
+- **Feature:** Handle up to 10,000 concurrent users during peak traffic.
+- **Feature:** Screenshot detection shall work across iOS and Android devices with minimal performance impact.
 
-#### 2.2.3 **Scalability**
+### 2.2.3 Scalability
 
-- Support horizontal scaling to accommodate a growing user base and content uploads.
-- Efficient handling of media storage and retrieval through a Content Delivery Network (CDN).
+- **Requirement:** Support horizontal scaling to accommodate a growing user base and content uploads.
+- **Feature:** Efficient handling of media storage and retrieval through a Content Delivery Network (CDN).
+- **Feature:** Product tagging shall integrate with major e-commerce platforms (e.g., Shopify, Amazon).
 
-#### 2.2.4 **Usability**
+### 2.2.4 Usability
 
-- Intuitive interface with minimal learning curve.
-- Support for accessibility features, including screen readers and high-contrast modes.
+- **Requirement:** Intuitive interface with minimal learning curve.
+- **Feature:** Support for accessibility features, including screen readers and high-contrast modes.
 
-#### 2.2.5 **Reliability**
+### 2.2.5 Reliability
 
-- Ensure 99.9% uptime with robust error handling and recovery mechanisms.
-- Regular data backups to prevent data loss.
+- **Requirement:** Ensure 99.9% uptime with robust error handling and recovery mechanisms.
+- **Feature:** Regular data backups to prevent data loss.
 
 ---
 
@@ -233,7 +251,6 @@ The platform follows a client-server architecture:
 ## 8. Use Case Diagram
 
 ![image](https://github.com/user-attachments/assets/87032384-2f08-4a3d-945f-7a3256cae7df)
-
 
 ### **Use Case 1: User Registration**
 
