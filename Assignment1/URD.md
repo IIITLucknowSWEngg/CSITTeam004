@@ -1,9 +1,9 @@
-# **User Requirements Document (URD) for Pixello** (Based on Stakeholder Interviews)
+# **User Requirements Document (URD) for Pixello**
 
 ---
 
 ## **Introduction**  
-This document consolidates the insights and expectations gathered through interviews with various stakeholders for the Pixello project, an Instagram-like social media platform. Each section reflects the perspectives, challenges, and needs expressed by stakeholders, ensuring their voices shape the development and functionality of Pixello.
+This document consolidates the insights and expectations gathered through interviews with us, the stakeholders, for the Pixello project, an Instagram-like social media platform. Each section reflects our perspectives, challenges, and needs, ensuring our voices shape the development and functionality of Pixello.
 
 ---
 
@@ -49,7 +49,7 @@ This document consolidates the insights and expectations gathered through interv
 
 **Requirements Based on Interviews:**  
 - Custom analytics for follower growth and engagement tracking.  
-- Built-in monetization options like direct sponsorship deals and paywalled content.
+- Built-in monetization options like direct sponsorship deals and paywalled content.  
 
 ---
 
@@ -62,7 +62,13 @@ This document consolidates the insights and expectations gathered through interv
 
 **Requirements Based on Interviews:**  
 - Simplified navigation for exploring posts, stories, and reels.  
-- Comprehensive privacy controls accessible from a single settings page.
+- Comprehensive privacy controls accessible from a single settings page.  
+
+**Smart Content Recommendations:**  
+- Personalized content displayed in a curated "Today's Mood" section based on our activity, mood, and interests.  
+
+**Scenario:**  
+When we log in, the app shows a "Today's Mood" section with travel-related posts due to our recent activity.
 
 #### **Businesses**  
 **Interview Insights:**  
@@ -71,7 +77,23 @@ This document consolidates the insights and expectations gathered through interv
 
 **Requirements Based on Interviews:**  
 - Product tagging for shoppable posts.  
-- Insights into audience behavior and shopping trends.
+- Insights into audience behavior and shopping trends.  
+
+**Interactive Product Tags:**  
+- Sellers like us can tag products in posts with links to major e-commerce platforms, such as Amazon or Shopify, allowing for direct sales and commission earnings.  
+
+**Scenario:**  
+We upload a photo of a dress, tag it with an Amazon product link, and earn commissions through affiliate sales.
+
+#### **Privacy-Conscious Content Creators**  
+**Interview Insights:**  
+- **Content Creator E:** "I want control over my content. Knowing when someone screenshots my private posts or DMs is essential."
+
+**Requirements Based on Interviews:**  
+- Anti-screenshot protection for private posts and stories, with immediate notifications to us.  
+
+**Scenario:**  
+If someone takes a screenshot of our private story, the app instantly notifies us to maintain our privacy.
 
 ---
 
@@ -83,7 +105,7 @@ This document consolidates the insights and expectations gathered through interv
 
 **Requirements Based on Interviews:**  
 - Quarterly reports detailing user growth, engagement, and revenue generation.  
-- Transparency in business strategy and expansion plans.
+- Transparency in business strategy and expansion plans.  
 
 #### **Third-Party Developers**  
 **Interview Insights:**  
@@ -91,7 +113,7 @@ This document consolidates the insights and expectations gathered through interv
 
 **Requirements Based on Interviews:**  
 - Detailed API documentation with sample code snippets.  
-- Developer support forums for collaboration and issue resolution.
+- Developer support forums for collaboration and issue resolution.  
 
 ---
 
@@ -103,7 +125,7 @@ This document consolidates the insights and expectations gathered through interv
 
 **Requirements Based on Interviews:**  
 - Transparent privacy policies and easy-to-use data management tools.  
-- Regular third-party audits to maintain compliance.
+- Regular third-party audits to maintain compliance.  
 
 #### **Advertising Regulatory Bodies**  
 **Interview Insights:**  
@@ -111,7 +133,7 @@ This document consolidates the insights and expectations gathered through interv
 
 **Requirements Based on Interviews:**  
 - Mandatory labeling of all sponsored content.  
-- Moderation tools to review flagged advertisements.
+- Moderation tools to review flagged advertisements.  
 
 ---
 
@@ -123,9 +145,9 @@ This document consolidates the insights and expectations gathered through interv
 
 **Requirements Based on Interviews:**  
 - AI-powered tools for detecting community guideline violations.  
-- Dashboards displaying flagged content with user report details.
+- Dashboards displaying flagged content with user report details.  
 
 ---
 
 ## **Conclusion**  
-This document integrates stakeholder interviews to ensure their needs and challenges guide Pixello’s development. By addressing these real-world insights, Pixello aims to deliver a platform that balances user engagement, business needs, and regulatory compliance.
+This document integrates our interviews to ensure our needs and challenges guide Pixello’s development. By addressing these real-world insights, Pixello aims to deliver a platform that balances user engagement, business needs, and regulatory compliance.
