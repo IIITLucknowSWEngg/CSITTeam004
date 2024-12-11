@@ -30,7 +30,7 @@ The Pixello project aims to replicate the core functionalities of the Instagram 
 - Uploading and sharing photos/videos with captions and tags.
 - Personal feeds and an explore section for trending content.
 - Real-time notifications and direct messaging.
-- Responsive design for mobile and web platforms.
+- Responsive design for mobile and web platforms.<br/>
   *Additional features*
 - **Smart Content Recommendations**: AI-driven recommendations tailored to users' mood, activity, and behavior.
 - **Anti-Screenshot Protection**: Notify users when content is screenshotted or recorded in private messages or posts.
