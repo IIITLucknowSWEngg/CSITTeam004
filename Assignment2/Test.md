@@ -65,6 +65,9 @@ posting, commenting, liking, and sharing, as well as security and performance fe
 5.1 [Stories](https://github.com/IIITLucknowSWEngg/CSITTeam004/edit/main/Assignment2/Test.md#1-stories)<br/>
 5.2 [Reels](https://github.com/IIITLucknowSWEngg/CSITTeam004/edit/main/Assignment2/Test.md#2-reels)<br/>
 5.3 [Direct Messaging](https://github.com/IIITLucknowSWEngg/CSITTeam004/edit/main/Assignment2/Test.md#3-direct-messaging)<br/>
+5.4 [Smart Content Recommendations](https://github.com/IIITLucknowSWEngg/CSITTeam004/edit/main/Assignment2/Test.md#54-smart-content-recommendations)<br/>
+5.5 [Anti-Screenshot Protection](https://github.com/IIITLucknowSWEngg/CSITTeam004/edit/main/Assignment2/Test.md#55-anti-screenshot-protection)<br/>
+5.6 [Interactive Product Tags](https://github.com/IIITLucknowSWEngg/CSITTeam004/edit/main/Assignment2/Test.md#56-interactive-product-tags)<br/>
 
 *Note: All links point to respective test sections.*
 
@@ -1560,6 +1563,174 @@ describe('DMs API', () => {
 });
 ```
 
+
+<br/>
+
+### **5.4 Smart Content Recommendations**
+
+**Test Plan Identifier**
+TP-SCR-001
+
+**Test Plan Introduction**
+This test plan outlines the testing approach and strategy for the Smart Content Recommendations feature of the application. The purpose of this test plan is to ensure that the Smart Content Recommendations feature meets the required functionality, performance, and security standards.
+
+**Test Items**
+- Recommendation algorithm
+- Content database
+- User interaction tracking
+
+**Test Objectives**
+- To verify that the recommendation algorithm suggests relevant content to users.
+- To verify that the content database is updated correctly.
+- To verify that user interactions are tracked correctly.
+
+**Test Scope**
+This test plan covers the testing of the Smart Content Recommendations feature, including the recommendation algorithm, content database, and user interaction tracking. The following scenarios are in scope:
+
+- Viewing recommended content
+- Interacting with recommended content (e.g. liking, commenting)
+- Updating content database
+
+The following scenarios are out of scope:
+
+- Testing of other features, such as search or filtering
+- Testing of the application's performance or security
+
+**Test Approach**
+The testing approach will include a combination of manual testing and automated testing. Manual testing will be used to test the recommendation algorithm and user interaction tracking, while automated testing will be used to test the content database updates.
+
+*smart_content_recommendations.test.js*
+```js
+describe('Smart Content Recommendations', () => {
+  it('should suggest relevant content to users', async () => {
+    const response = await axios.get('http://localhost:8000/recommended-content');
+    expect(response.status).toBe(200);
+    expect(response.data.content).toBeDefined();
+  });
+
+  it('should update content database correctly', async () => {
+    const response = await axios.post('http://localhost:8000/content', {
+      title: 'Test Content',
+      description: 'Test description'
+    });
+    expect(response.status).toBe(201);
+    expect(response.data.content).toBeDefined();
+  });
+});
+```
+
+<br/>
+
+
+### 5.5 **Anti-Screenshot Protection**
+
+**Test Plan Identifier** 
+TP-ASP-001
+
+**Test Plan Introduction** 
+This test plan outlines the testing approach and strategy for the Anti-Screenshot Protection feature of the application. The purpose of this test plan is to ensure that the Anti-Screenshot Protection feature meets the required functionality, performance, and security standards.
+
+**Test Items**
+- Screenshot detection algorithm
+- Watermarking system
+- Access control system
+
+**Test Objectives**
+- To verify that the screenshot detection algorithm detects screenshot attempts correctly.
+- To verify that the watermarking system applies watermarks correctly.
+- To verify that the access control system restricts access to protected content correctly.
+
+**Test Scope** 
+This test plan covers the testing of the Anti-Screenshot Protection feature, including the screenshot detection algorithm, watermarking system, and access control system. The following scenarios are in scope:
+
+- Attempting to take a screenshot of protected content
+- Viewing protected content with watermark
+- Accessing protected content without permission
+
+The following scenarios are out of scope:
+
+- Testing of other features, such as content upload or sharing
+- Testing of the application's performance or security
+
+**Test Approach** 
+The testing approach will include a combination of manual testing and automated testing. Manual testing will be used to test the screenshot detection algorithm and watermarking system, while automated testing will be used to test the access control system.
+
+*anti_screenshot_protection.test.js*
+```js
+describe('Anti-Screenshot Protection', () => {
+  it('should detect screenshot attempts correctly', async () => {
+    const response = await axios.get('http://localhost:8000/protected-content');
+    expect(response.status).toBe(200);
+    expect(response.data.watermark).toBeDefined();
+  });
+
+  it('should apply watermarks correctly', async () => {
+    const response = await axios.get('http://localhost:8000/protected-content');
+    expect(response.status).toBe(200);
+    expect(response.data.watermark).toBeDefined();
+  });
+});
+```
+
+<br/>
+
+### 5.6 **Interactive Product Tags**
+
+**Test Plan Identifier**
+TP-IPT-001
+
+**Test Plan Introduction**
+This test plan outlines the testing approach and strategy for the Interactive Product Tags feature of the application. The purpose of this test plan is to ensure that the Interactive Product Tags feature meets the required functionality, performance, and security standards.
+
+**Test Items**
+- Tag creation and management
+- Tag assignment to products
+- Tag display and interaction on product pages
+- Tag analytics and reporting
+
+**Test Objectives**
+- To verify that tags can be created and managed correctly.
+- To verify that tags can be assigned to products correctly.
+- To verify that tags are displayed and interacted with correctly on product pages.
+- To verify that tag analytics and reporting are accurate and useful.
+
+**Test Scope** 
+This test plan covers the testing of the Interactive Product Tags feature, including tag creation and management, tag assignment to products, tag display and interaction on product pages, and tag analytics and reporting. The following scenarios are in scope:
+
+- Creating and managing tags
+- Assigning tags to products
+- Viewing and interacting with tags on product pages
+- Viewing tag analytics and reporting
+
+The following scenarios are out of scope:
+
+- Testing of other features, such as product search or filtering
+- Testing of the application's performance or security
+
+**Test Approach**
+The testing approach will include a combination of manual testing and automated testing. Manual testing will be used to test the tag creation and management, tag assignment to products, and tag display and interaction on product pages. Automated testing will be used to test the tag analytics and reporting.
+
+*interactive_product_tags.test.js*
+```js
+describe('Interactive Product Tags', () => {
+  it('should create and manage tags correctly', async () => {
+    const response = await axios.post('http://localhost:8000/tags', {
+      name: 'Test Tag',
+      description: 'Test description'
+    });
+    expect(response.status).toBe(201);
+    expect(response.data.tag).toBeDefined();
+  });
+
+  it('should assign tags to products correctly', async () => {
+    const response = await axios.post('http://localhost:8000/products/1/tags', {
+      tag_id: 1
+    });
+    expect(response.status).toBe(201);
+    expect(response.data.product).toBeDefined();
+  });
+});
+```
 
 <br/>
 
