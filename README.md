@@ -2,6 +2,8 @@
 
 # CSIT TEAM 004
 
+# Project Name - PIXELLO 
+
 # Team Composition
 
 | Name | Branch | Roll Number | Contact Information | GitHub Profile |
