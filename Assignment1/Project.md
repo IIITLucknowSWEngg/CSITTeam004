@@ -2,7 +2,7 @@
 
 # Pixello
 
-**This project, Pixello, is a replication of a popular social media platform for sharing photos and videos. Built using [ReactJs, VueJs, NodeJs, ExpressJs, MongoDB, and Socket.IO], it aims to incorporate the core functionalities of Instagram, including user authentication, photo sharing, liking, commenting, and following other users.**
+**This project, Pixello, is a competitor of a popular social media platform for sharing photos and videos. Built using [ReactJs, VueJs, NodeJs, ExpressJs, MongoDB, and Socket.IO], it aims to incorporate the core functionalities of Instagram, including user authentication, photo sharing, liking, commenting, and following other users along with some additional features.**
 
 ---
 
@@ -31,6 +31,7 @@ The Pixello project aims to replicate the core functionalities of the Instagram 
 - Personal feeds and an explore section for trending content.
 - Real-time notifications and direct messaging.
 - Responsive design for mobile and web platforms.
+  *Additional features*
 - **Smart Content Recommendations**: AI-driven recommendations tailored to users' mood, activity, and behavior.
 - **Anti-Screenshot Protection**: Notify users when content is screenshotted or recorded in private messages or posts.
 - **Interactive Product Tags**: Tag products in posts, allowing users to earn affiliate commissions via linked purchases.
