@@ -92,17 +92,17 @@ Pixello will feature an intuitive user interface, robust back-end architecture, 
   - Story views.
   - Direct messages.
 
-### 2.1.10 **Smart Content Recommendations**
+#### 2.1.10 **Smart Content Recommendations**
 
 - **Requirement:** The system shall analyze user interactions, content preferences, and activity history to recommend personalized posts, reels, or stories.
 - **Feature:** The system shall display a "Today's Mood" section with curated content based on inferred user emotions and trends.
 
-### 2.1.11 **Anti-Screenshot Protection**
+#### 2.1.11 **Anti-Screenshot Protection**
 
 - **Requirement:** The system shall detect and log screenshot attempts on private posts, stories, and DMs.
 - **Feature:** The system shall notify the content owner of any screenshot or screen recording event.
 
-### 2.1.12 **Interactive Product Tags**
+#### 2.1.12 **Interactive Product Tags**
 
 - **Requirement:** The system shall allow users to tag products in their posts with affiliate links.
 - **Feature:** The system shall provide analytics for users on product interactions (e.g., clicks, purchases).
